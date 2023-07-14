@@ -12,7 +12,16 @@
 
 <body>
     <!-- logo image -->
-    <img class="logo" src="images/logo.png" alt="picture of the logo">
+    <img class="logo"
+                    alt="picture of the logo"
+                    src="images/logo-760.png"
+                    srcset="
+                    images/logo-390.png 390w,
+                    images/logo-760.png 760w,
+                    images/logo-1200.png 1200w"
+                    sizes="
+                        (min-width: 760px) 760px, 100vw"
+                    >
     <i class="fa-solid fa-bars"></i>
     <div class="navigation" id="back-to-top">
         <div class="wrapper flex-1">

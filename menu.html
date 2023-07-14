@@ -11,7 +11,16 @@
 </head>
 <body>
     <!-- logo image -->
-    <img class="logo" src="images/logo.png" alt="picture of the logo">
+    <img class="logo"
+                    alt="picture of the logo"
+                    src="images/logo-760.png"
+                    srcset="
+                    images/logo-390.png 390w,
+                    images/logo-760.png 760w,
+                    images/logo-1200.png 1200w"
+                    sizes="
+                        (min-width: 760px) 760px, 100vw"
+                    >
     <i class="fa-solid fa-bars"></i>
     <div class="navigation" id="back-to-top">
         <div class="wrapper flex-1">
@@ -33,8 +42,8 @@
                 <h2 role="heading" class="colour">Menu</h2>
             </div>
             <div class="wrapper">
-                <section role="region" class="item cupcakes">
-                    <h3 role="heading" class="colour">Cupcakes</h3>
+                <section itemscope itemtype="https://schema.org/MenuSection" role="region" class="item cupcakes">
+                    <h3 itemprop="hasMenuItem" role="heading" class="colour">Cupcakes</h3>
                     <!-- img optimization -->
                     <img class="img"
                     alt="picture of a cupcake."
@@ -46,12 +55,12 @@
                     sizes="
                         (min-width: 760px) 760px, 100vw"
                     >
-                    <p class="colour">Delicious cupcakes available in various flavors.<br>$2.50 each</p>
+                    <p itemprop="about" class="colour">Delicious cupcakes available in various flavors.<br>$2.50 each</p>
                 </section>
             </div>
             <div class="wrapper">
-                <section role="region" class="item cookies">
-                    <h3 role="heading" class="colour">Cookies</h3>
+                <section itemscope itemtype="https://schema.org/MenuSection" role="region" class="item cookies">
+                    <h3 itemprop="hasMenuItem" role="heading" class="colour">Cookies</h3>
                     <!-- img optimization -->
                     <img class="img img-c"
                     alt="picture of cookies."
@@ -63,12 +72,12 @@
                     sizes="
                         (min-width: 760px) 760px, 100vw"
                     >
-                    <p class="colour">Freshly baked cookies made with the finest ingredients. <br> $1.50 each</p>
+                    <p itemprop="about" class="colour">Freshly baked cookies made with the finest ingredients. <br> $1.50 each</p>
                 </section>
             </div>
             <div class="wrapper">
-                <section role="region" class="item cakes">
-                    <h3 role="region" class="colour">Cakes</h3>
+                <section itemscope itemtype="https://schema.org/MenuSection" role="region" class="item cakes">
+                    <h3 itemprop="hasMenuItem" role="region" class="colour">Cakes</h3>
                     <!-- img optimization -->
                     <img class="img"
                     alt="picture of a cake."
@@ -80,12 +89,12 @@
                     sizes="
                         (min-width: 760px) 760px, 100vw"
                     >
-                    <p class="colour">Homemade cakes with a variety of frostings. <br> $12.00 each</p>
+                    <p itemprop="about" class="colour">Homemade cakes with a variety of frostings. <br> $12.00 each</p>
                 </section>
             </div>
             <div class="wrapper">
-                <section role="region" class="item brownies">
-                    <h3 role="heading" class="colour">Brownies</h3>
+                <section itemscope itemtype="https://schema.org/MenuSection" role="region" class="item brownies">
+                    <h3 itemprop="hasMenuItem" role="heading" class="colour">Brownies</h3>
                     <!-- img optimization -->
                     <img class="img"
                     alt="picture of brownies."
@@ -97,7 +106,7 @@
                     sizes="
                         (min-width: 760px) 760px, 100vw"
                     >
-                    <p class="colour">Rich and fudgy brownies that will satisfy your sweet tooth. <br> $2.00 each</p>
+                    <p itemprop="about" class="colour">Rich and fudgy brownies that will satisfy your sweet tooth. <br> $2.00 each</p>
                 </section>
             </div>
         </div>

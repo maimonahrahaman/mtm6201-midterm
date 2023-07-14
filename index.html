@@ -12,7 +12,16 @@
 
 <body>
     <!-- logo image will have animation so it spins -->
-    <img class="logo" src="images/logo.png" alt="picture of the logo">
+    <img class="logo"
+                    alt="picture of the logo"
+                    src="images/logo-760.png"
+                    srcset="
+                    images/logo-390.png 390w,
+                    images/logo-760.png 760w,
+                    images/logo-1200.png 1200w"
+                    sizes="
+                        (min-width: 760px) 760px, 100vw"
+                    >
     <i class="fa-solid fa-bars"></i>
     <div class="navigation" id="back-to-top">
         <div class="wrapper flex-1">
@@ -31,7 +40,16 @@
     <a class="link" href="#about">Skip To About  &darr;</a>
     <!-- h1 will be positioned on top of the img in css -->
     <div class="banner">
-        <img class="img" src="images/Promote-Dessert-Store-Online.jpg" alt="main-banner">
+        <img class="img"
+                    alt="main-banner"
+                    src="images/banner-760.jpg"
+                    srcset="
+                    images/banner-390.jpg 390w,
+                    images/banner-760.jpg 760w,
+                    images/banner-1200.jpg 1200w"
+                    sizes="
+                        (min-width: 760px) 760px, 100vw"
+                    >
         <div class="wrapper banner-text">  
             <h1 role="heading">Sugar Delights</h1>   
         </div>    
