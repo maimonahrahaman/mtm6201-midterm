@@ -9,41 +9,47 @@
     <link rel="stylesheet" href="https://use.typekit.net/olo1idb.css">
     <link rel="stylesheet" href="https://use.typekit.net/olo1idb.css">
 </head>
+
 <body>
+    <!-- logo image will have animation so it spins -->
     <img class="logo" src="images/logo.png" alt="picture of the logo">
     <i class="fa-solid fa-bars"></i>
-    <div class="navigation">
+    <div class="navigation" id="back-to-top">
         <div class="wrapper flex-1">
             <!-- remove underline and bullets from nav. -->
             <!-- for desktop use flex so everything is in one line. -->
-            <nav class="nav">
+            <nav role="navigation" class="nav">
                 <ul>
                     <li><a href="index.html">Home</a> </li>
                     <li><a href="menu.html">Menu</a></li>
-                    <li><a href="private-events.html">Our Services</a></li>
+                    <li><a href="private-events.html">Private Events</a></li>
                 </ul>
             </nav>
         </div>    
     </div>
+    <!-- skip link to about -->
+    <a class="link" href="#about">Skip To About  &darr;</a>
+    <!-- h1 will be positioned on top of the img in css -->
     <div class="banner">
         <img class="img" src="images/Promote-Dessert-Store-Online.jpg" alt="main-banner">
         <div class="wrapper banner-text">  
-            <h1>Sugar Delights</h1>   
+            <h1 role="heading">Sugar Delights</h1>   
         </div>    
     </div>
-    <div class="about">   
+    <div class="about" id="about">   
         <div class="wrapper">
-            <section>
-                <h2 class="colour">About</h2>
+            <section role="region">
+                <h2 role="heading" class="colour">About</h2>
                 <p class="colour">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis non minus voluptatem ut, maxime ab ipsam quasi. Officia quod ratione, perferendis repudiandae tenetur harum debitis expedita corporis consequatur unde laborum.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae saepe porro nobis fuga expedita omnis fugit iure corporis deleniti rem aperiam nisi repellendus maiores ipsum velit voluptas deserunt, ipsam aut.</p>
             </section>
         </div>
     </div>
     <div class="time">
+        <!-- time and location will be beside each other using grid -->
         <div class="wrapper"> 
-            <h2 class="colour">Hours and Location</h2>
+            <h2 role="heading" class="colour">Hours and Location</h2>
             <div class="grid colour">
-                <article>
+                <article role="complementary">
                     <p>Sunday - 12:00 p.m. - 06:00 p.m.</p>
                     <p>Monday - 08:00 a.m. - 10:00 p.m.</p>
                     <p>Tuesday - 08:00 a.m. - 10:00 p.m.</p>
@@ -54,24 +60,27 @@
                 </article>
                 
                 <!-- remove border from map. -->
-                <article class="location">
+                <article role="complementary" class="location">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d89730.46637915696!2d-75.804157!3d45.3472564!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680387905970!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </article>
             </div>
         </div>
     </div> 
     <div class="events">
-        <div class="wrapper">
-            <h2 class="colour">Private Events</h2>
+        <div class="wrapper button-1">
+            <h2 role="heading" class="colour">Private Events</h2>
             <p class="colour">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, laudantium omnis officiis reprehenderit libero tenetur dolorum vitae quia? Sequi architecto praesentium officia voluptates quia veritatis voluptatibus, corrupti dolore labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptatibus accusamus, commodi fugit fugiat neque inventore ex qui, deleniti voluptatum rem assumenda obcaecati modi unde est atque provident quis laborum.</p>
-            <form action = "private-events.html">
+            <form role="form" action = "private-events.html">
+                <!-- button will have animation so that it increaes in size -->
                 <button class="button">See more<i class="fa-solid fa-play"></i></button>
             </form>
         </div>
-    </div>       
+    </div> 
+        <!-- skip link to go to the top of the page -->
+        <a class="link" href="#back-to-top">Back to top &uarr;</a> 
     <div class="footer">
         <div class="wrapper">
-            <footer>&copy; Copyright Maimonah Rahaman
+            <footer role="contentinfo">&copy; Copyright Maimonah Rahaman
                 <div class="social-media">
                     <i class="fa-brands fa-youtube"></i>
                     <i class="fa-brands fa-instagram"></i>

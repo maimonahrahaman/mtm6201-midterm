@@ -1,0 +1,370 @@
+/* resets styles for everything */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set max width for the html element to 1200px and center it on the page */
+html {
+    max-width: 1200px;
+    box-sizing:border-box;
+    margin: auto;
+}
+
+/* Wraps the content with 95% width and centered */
+.wrapper {
+    width: 95%;
+    margin: auto;
+}
+
+/* Sets font family, font size, and font weight for body text */
+body {
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+}
+
+/* Styles for different heading tags */
+h1 {
+    font-family: "courier-prime", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    font-weight: 700;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-family: Impact; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    font-size: 35px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    font-weight: 700;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+p {
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+/* Sets color for text with class 'colour' */
+.colour {
+    color: #5e0b15;
+}
+
+/* Sets width to 100% for all images  */
+.img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.link {
+    color: #648381;
+    padding: 10px;
+}
+
+.logo {
+    display: inline;
+    width: 100px;
+    float: right;
+    margin: 20px;
+}
+
+/* animation for the logo so that it spins */
+.logo {
+    animation: spin 5s infinite linear;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  
+
+/* Styles for the navigation bar with background color, padding, and text alignment */
+.navigation {
+    background-color: #d4d4aa;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    clear: right;
+}
+
+nav ul li {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+/* Styles navigation links with no bullets and underline*/
+li a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #5e0b15;
+    padding: 35px;
+    font-size: 18px;
+}
+
+.fa-bars {
+    color: #5e0b15;
+    padding: 20px;
+    padding-left: 10px;
+    
+}
+
+
+/* places banner text i.e. company's name on top of the picture  */
+.banner {
+    position: relative;
+}
+
+ .banner-text {
+    background-color: #d4d4aab4;
+    color: #5e0b15;
+    position: absolute;
+    top: 10%;
+    left: 1.5%;
+    padding-top:20%;
+    padding-bottom: 20%;
+    text-align: center;
+}
+
+/* gives space between the text and play button */
+.fa-play {
+    padding-left: 5px;
+}
+
+/* gives them a background colour and spacing */
+.about, .events, .cupcakes, .cakes {
+    background-color: #ebc3db;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+/* styles for different sections. changing background colour. */
+.time, .cookies, .brownies {
+    background-color: #edb458;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+/* grid for location and time */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+iframe{
+	border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* styles fr button */
+button {
+    background-color: #648381;
+	padding: 20px 40px;
+	font-size: 16px;
+	border-style: none;
+    margin-left: 5px;
+    color: #edb458;
+    margin-top: 5px;
+}
+
+
+form textarea {
+    width: 97%;
+}
+
+form {
+    padding-left: 10px;
+}
+
+/* animation for the button so it increses size */
+.button {
+    animation: buttonAnimation 1s ease-in-out infinite alternate;
+}
+
+@keyframes buttonAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* background colour bleeds */
+.footer{
+	background-color: #d4d4aa;
+	color:#5e0b15;
+	padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.social-media {
+    text-align: left;
+    float: left;
+}
+
+
+/* for desktop */
+@media screen and (min-width: 760px){
+	/* decreases the content size so more bleed */
+    .wrapper {
+        width: 80%;
+        margin: auto;
+    }
+    /* puts nav in line by using flex */
+
+    nav ul {
+        display: flex;
+        margin-top: 25px;
+        justify-content: center;
+    }
+
+    li a {
+        font-size: 16px;
+        padding: 15px 30px;
+    }
+
+    .banner-text {
+        left: 10%;
+    }
+
+    /* Styles for different heading tags */
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 14px;
+}
+
+button {
+    text-align: center;
+    width:98%;
+}
+
+/* menu items in grid form. */
+.item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "a a"
+    "b c"
+    "b c"
+    "b c";
+}
+
+/* naming them for grid templete and margin for space */
+
+.item h3 {
+    grid-area: a;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    
+}
+.item img {
+    grid-area: b;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+.item p {
+    grid-area: c;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.item .img-c {
+    height: 250px;
+    object-fit: none;
+}
+
+}  

@@ -4,21 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Private Events</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/ec9e685984.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/olo1idb.css">
+    <link rel="stylesheet" href="https://use.typekit.net/olo1idb.css">
 </head>
+
 <body>
-    <div class="navigation">
+    <!-- logo image -->
+    <img class="logo" src="images/logo.png" alt="picture of the logo">
+    <i class="fa-solid fa-bars"></i>
+    <div class="navigation" id="back-to-top">
         <div class="wrapper flex-1">
             <!-- remove underline and bullets from nav. -->
             <!-- for desktop use flex so everything is in one line. -->
-            <img class="logo" src="images/logo.png" alt="picture of the logo">
-            <nav class="nav">
+           <!-- nav menu -->
+            <nav role="navigation" class="nav">
                 <ul>
                     <li><a href="index.html">Home</a> </li>
                     <li><a href="menu.html">Menu</a></li>
-                    <li><a href="private-events.html">Our Services</a></li>
+                    <li><a href="private-events.html">Private Events</a></li>
                 </ul>
             </nav>
         </div>    
     </div>
+    <div class="private-events">   
+        <div class="wrapper">
+            <h2 role="heading" class="colour">Private Events</h2>
+        </div>
+        <div class="wrapper events private">
+            <p class="colour">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, laudantium omnis officiis reprehenderit libero tenetur dolorum vitae quia? Sequi architecto praesentium officia voluptates quia veritatis voluptatibus, corrupti dolore labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptatibus accusamus, commodi fugit fugiat neque inventore ex qui, deleniti voluptatum rem assumenda obcaecati modi unde est atque provident quis laborum.</p>
+            <p class="colour">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, laudantium omnis officiis reprehenderit libero tenetur dolorum vitae quia? Sequi architecto praesentium officia voluptates quia veritatis voluptatibus, corrupti dolore labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptatibus accusamus, commodi fugit fugiat neque inventore ex qui, deleniti voluptatum rem assumenda obcaecati modi unde est atque provident quis laborum.</p>
+            <section role="region" class="form colour">
+                <!-- Form to send a message -->
+                <!-- style in css so it takes up the entire width. -->
+                <h3>Send us a message</h3>
+                <form role="form" action="index.html" method="get" class="contact-us">
+                    <div>
+                        <label for="yourname">FullName</label><br>
+                        <textarea id="yourname"></textarea>
+                    </div>
+                    <div>
+                        <label for="email">Email</label><br>
+                        <textarea id="email"></textarea>
+                    </div>
+                    <div>
+                        <label for="message">Message</label><br>
+                        <textarea id="message" rows="7"></textarea>
+                    </div> 
+                    <div>
+                        <button class="send button" type="submit">Send</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <!-- Link to go back to top of the page -->
+        <a class="link" href="#back-to-top">Back to top &uarr;</a> 
+        <div class="footer">
+            <div class="wrapper">
+                <footer role="contentinfo">&copy; Copyright Maimonah Rahaman
+                    <div class="social-media">
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-tiktok"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <br>
+                    All images are taken from  <u>stock images</u> 
+            
+                    </footer>    
+            </div>
+        </div> 
+    </div>    
 </body>
 </html>

@@ -10,93 +10,102 @@
     <link rel="stylesheet" href="https://use.typekit.net/olo1idb.css">
 </head>
 <body>
+    <!-- logo image -->
     <img class="logo" src="images/logo.png" alt="picture of the logo">
     <i class="fa-solid fa-bars"></i>
-    <div class="navigation">
+    <div class="navigation" id="back-to-top">
         <div class="wrapper flex-1">
             <!-- remove underline and bullets from nav. -->
             <!-- for desktop use flex so everything is in one line. -->
-            <nav class="nav">
+            <nav role="navigation" class="nav">
                 <ul>
                     <li><a href="index.html">Home</a> </li>
                     <li><a href="menu.html">Menu</a></li>
-                    <li><a href="private-events.html">Our Services</a></li>
+                    <li><a href="private-events.html">Private Events
+                    </a></li>
                 </ul>
             </nav>
         </div>    
     </div>
+    <!-- menu section. for desktop version img and text will beside each other using grid -->
         <div class="menu">   
             <div class="wrapper">
-                <h2 class="colour">Menu</h2>
+                <h2 role="heading" class="colour">Menu</h2>
             </div>
             <div class="wrapper">
-                <section class="item cupcakes">
-                    <h3 class="colour">Cupcakes</h3>
+                <section role="region" class="item cupcakes">
+                    <h3 role="heading" class="colour">Cupcakes</h3>
+                    <!-- img optimization -->
                     <img class="img"
                     alt="picture of a cupcake."
                     src="images/cupcakes-760.jpg"
                     srcset="
                     images/cupcakes-390.jpg 390w,
                     images/cupcakes-760.jpg 760w,
-                    images/cupcakes-1200.jpg 1200w
-                    "
+                    images/cupcakes-1200.jpg 1200w"
+                    sizes="
+                        (min-width: 760px) 760px, 100vw"
                     >
-                    <p class="colour">Delicious cupcakes available in various flavors.</p>
-                    <p class="colour">$2.50 each</p>
+                    <p class="colour">Delicious cupcakes available in various flavors.<br>$2.50 each</p>
                 </section>
             </div>
             <div class="wrapper">
-                <section class="item cookies">
-                    <h3 class="colour">Cookies</h3>
-                    <img class="img"
+                <section role="region" class="item cookies">
+                    <h3 role="heading" class="colour">Cookies</h3>
+                    <!-- img optimization -->
+                    <img class="img img-c"
                     alt="picture of cookies."
                     src="images/cookies-760.jpg"
                     srcset="
                     images/cookies-390.jpg 390w,
                     images/cookies-760.jpg 760w,
-                    images/cookies-1200.jpg 1200w
-                    "
+                    images/cookies-1200.jpg 1200w"
+                    sizes="
+                        (min-width: 760px) 760px, 100vw"
                     >
-                    <p class="colour">Freshly baked cookies made with the finest ingredients.</p>
-                    <p class="colour">$1.50 each</p>
+                    <p class="colour">Freshly baked cookies made with the finest ingredients. <br> $1.50 each</p>
                 </section>
             </div>
             <div class="wrapper">
-                <section class="item cakes">
-                    <h3 class="colour">Cakes</h3>
+                <section role="region" class="item cakes">
+                    <h3 role="region" class="colour">Cakes</h3>
+                    <!-- img optimization -->
                     <img class="img"
                     alt="picture of a cake."
                     src="images/cake-760.jpg"
                     srcset="
                     images/cake-390.jpg 390w,
                     images/cake-760.jpg 760w,
-                    images/cake-1200.jpg 1200w
-                    "
+                    images/cake-1200.jpg 1200w"
+                    sizes="
+                        (min-width: 760px) 760px, 100vw"
                     >
-                    <p class="colour">Homemade cakes with a variety of frostings.</p>
-                    <p class="colour">$12.00 each</p>
+                    <p class="colour">Homemade cakes with a variety of frostings. <br> $12.00 each</p>
                 </section>
             </div>
             <div class="wrapper">
-                <section class="item brownies">
-                    <h3 class="colour">Brownies</h3>
+                <section role="region" class="item brownies">
+                    <h3 role="heading" class="colour">Brownies</h3>
+                    <!-- img optimization -->
                     <img class="img"
                     alt="picture of brownies."
                     src="images/brownie-760.jpg"
                     srcset="
                     images/brownie-390.jpg 390w,
                     images/brownie-760.jpg 760w,
-                    images/brownie-1200.jpg 1200w
-                    "
+                    images/brownie-1200.jpg 1200w"
+                    sizes="
+                        (min-width: 760px) 760px, 100vw"
                     >
-                    <p class="colour">Rich and fudgy brownies that will satisfy your sweet tooth.</p>
-                    <p class="colour">$2.00 each</p>
+                    <p class="colour">Rich and fudgy brownies that will satisfy your sweet tooth. <br> $2.00 each</p>
                 </section>
             </div>
         </div>
+        <!-- skip link which takes you to the top of the page -->
+        <a class="link" href="#back-to-top">Back to top &uarr;</a> 
         <div class="footer">
             <div class="wrapper">
-                <footer>&copy; Copyright Maimonah Rahaman
+                <footer role="contentinfo">&copy; Copyright Maimonah Rahaman
                     <div class="social-media">
                         <i class="fa-brands fa-youtube"></i>
                         <i class="fa-brands fa-instagram"></i>
