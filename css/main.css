@@ -283,6 +283,10 @@ form {
     float: left;
 }
 
+.menu-text {
+    font-size: 14px;
+}
+
 
 /* for desktop */
 @media screen and (min-width: 760px){
@@ -365,6 +369,12 @@ button {
 .item .img-c {
     height: 250px;
     object-fit: none;
+}
+
+.menu-text {
+    padding-left: 15px;
+    padding-top: 15px;
+    font-size: 16px;
 }
 
 }  
