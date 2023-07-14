@@ -295,8 +295,12 @@ form {
         width: 80%;
         margin: auto;
     }
-    /* puts nav in line by using flex */
 
+    .logo {
+        width: 150px;
+    }
+
+    /* puts nav in line by using flex */
     nav ul {
         display: flex;
         margin-top: 25px;
